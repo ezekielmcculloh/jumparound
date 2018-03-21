@@ -51,16 +51,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\boss2.cs" />
      <Compile Include="Assets\scripts\Acid.cs" />
      <Compile Include="Assets\scripts\AcidPad.cs" />
+     <Compile Include="Assets\scripts\Boss 2.cs" />
      <Compile Include="Assets\scripts\Boss.cs" />
      <Compile Include="Assets\scripts\FlyingBug.cs" />
      <Compile Include="Assets\scripts\Item.cs" />
      <Compile Include="Assets\scripts\lower asid.cs" />
+     <Compile Include="Assets\scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\scripts\NewBehaviourScript1.cs" />
      <Compile Include="Assets\scripts\NewBehaviourScript2.cs" />
      <Compile Include="Assets\scripts\NewBehaviourScript4.cs" />
+     <Compile Include="Assets\scripts\plant.cs" />
      <Compile Include="Assets\scripts\Player.cs" />
+     <Compile Include="Assets\scripts\stachue.cs" />
      <Compile Include="Assets\scripts\superTime.cs" />
      <Compile Include="Assets\scripts\Test.cs" />
  <Reference Include="UnityEngine.UIAutomation">

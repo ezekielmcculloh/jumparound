@@ -19,7 +19,7 @@ public class Player : MonoBehaviour {
 	private bool grounded;
 	public float maxHitPoints;
 	public bool facingRight = true;
-
+	public float SuperTime;
 	float timeToFire = 0;
 	Transform firePoint;
 
@@ -141,17 +141,26 @@ public class Player : MonoBehaviour {
 
 		if (other.name == "EnemyDamage") {
 			hitPoints = hitPoints - 1;
+		} else if (other.name == "flower") {
+				hitPoints = hitPoints - 1;
+		} else if (other.name == "boss ") {
+				hitPoints = hitPoints - 2;
 		} else if (other.name == "elivaiter") {
 			Debug.Log ("use the elivaiter");
 			transform.position = new Vector2 (2743,-299);
 		} else if (other.name == "PowerUp") {
 			Debug.Log ("get power up");
 			canShootHorns = true;
+		} else if (other.name == "Elivaiter (1)") {
+			Debug.Log ("use the elivaiter");
+			transform.position = new Vector2 (1396,-496);
 		} else if (other.name == "energyTank") {
 			hitPoints = maxHitPoints + 10;
 		} else if (other.name == "asid") {
 //			hitPoints = hitPoints - 5;
 			hitPoints = hitPoints - 10;
+		} else	if (other.name == "superTime") {
+			SuperTime = SuperTime - 1;
 		} else {
 			//			Debug.Log (other.name);
 			//			Debug.Log (other.name == "elivaiter");

@@ -12,8 +12,6 @@ public class superTime : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (other.name == "HeadStomper") {
-			SuperTime = SuperTime - 1;
+
 	}
-}
 }
